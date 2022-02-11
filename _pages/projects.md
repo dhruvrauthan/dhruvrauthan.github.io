@@ -1,10 +1,10 @@
 ---
 layout: page
-title: projects
+title: Projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: Some of my work. I'd be glad to discuss any of these with you!
 nav: true
-display_categories: [work, art]
+display_categories: [Academic, Personal, Art]
 horizontal: false
 ---
 
