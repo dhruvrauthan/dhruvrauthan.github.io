@@ -4,7 +4,7 @@ title: Projects
 permalink: /projects/
 description: Some of my work. I'd be glad to discuss any of these with you!
 nav: true
-display_categories: [Academic, Personal, Art]
+display_categories: [Academic, Personal]
 horizontal: false
 ---
 

@@ -44,8 +44,35 @@
               </li>
               {%- endif %} -->
 
+              <!-- Projects -->
+              <li class="nav-item {% if page.title == 'Projects' %}active{% endif %}">
+                <a class="nav-link" href="{{ '/projects/' | relative_url }}">Projects
+                  {%- if page.title == "Projects" -%}
+                  <span class="sr-only">(current)</span>
+                  {%- endif -%}
+                </a>
+              </li>
+
+              <!-- Art -->
+              <li class="nav-item {% if page.title == 'Art' %}active{% endif %}">
+                <a class="nav-link" href="{{ '/art/' | relative_url }}">Art
+                  {%- if page.title == "Art" -%}
+                  <span class="sr-only">(current)</span>
+                  {%- endif -%}
+                </a>
+              </li>
+
+              <!-- Contact -->
+              <li class="nav-item {% if page.title == 'Contact' %}active{% endif %}">
+                <a class="nav-link" href="{{ '/contact/' | relative_url }}">Contact
+                  {%- if page.title == "Contact" -%}
+                  <span class="sr-only">(current)</span>
+                  {%- endif -%}
+                </a>
+              </li>
+
               <!-- Other pages -->
-              {%- assign sorted_pages = site.pages | sort: "title" -%}
+              <!-- {%- assign sorted_pages = site.pages | sort: "title" -%}
               {%- for p in sorted_pages -%}
               {%- if p.nav and p.autogen == nil -%}
               {%- if p.dropdown %}
@@ -75,7 +102,7 @@
               </li>
               {%- endif -%}
               {%- endif -%}
-              {% endfor -%}
+              {% endfor -%} -->
               {%- if site.enable_darkmode %}
 
               <!-- Toogle theme mode -->
