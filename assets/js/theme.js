@@ -44,8 +44,8 @@ let initTheme = (theme) => {
         theme = 'dark';
     }
   }
-  //setTheme(theme);
-  setTheme(light);
+  setTheme(theme);
+  //setTheme('light');
 }
 
 
