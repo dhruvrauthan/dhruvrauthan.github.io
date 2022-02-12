@@ -3,7 +3,7 @@ layout: page
 title: Offline Payment System Protocol
 description: Implementing an offline payment system for CBDC
 img: assets/img/ops.png
-importance: 3
+importance: 2
 category: Academic
 ---
 
