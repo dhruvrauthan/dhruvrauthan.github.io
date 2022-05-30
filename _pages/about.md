@@ -8,7 +8,7 @@ subtitle:
 profile:
   align: right
   image: profile_picture.png
-  address: <a href="https://drive.google.com/file/d/1hePrfucIRT7L6U46yrdS6hiciOv90VMH/view?usp=sharing">Download my Resume</a>
+  address: <a href="https://drive.google.com/file/d/1h4wP8Q4bYTYKS95luwYpG16_UYwMfrfl/view?usp=sharing">Download my Resume</a>
 
 news: true  # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
