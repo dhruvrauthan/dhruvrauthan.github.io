@@ -1,7 +1,7 @@
 ---
 layout: post
 duration: Jun 2021 - Jul 2021
-location: USA
+location: USA (remote)
 inline: true
 ---
 
