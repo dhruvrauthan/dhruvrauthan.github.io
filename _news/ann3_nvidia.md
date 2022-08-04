@@ -1,7 +1,7 @@
 ---
 layout: post
 duration: May 2022 - July 2022
-location: Pune (remote)
+location: Pune
 inline: true
 ---
 
