@@ -7,7 +7,7 @@ importance: 3
 category: Academic
 ---
 
-[Project Report](https://drive.google.com/file/d/1cg4ex2jJWih7Ug-HIUTdrDQ_AKwNgtA3/view?usp=sharing)
+[Project Report](/assets/pdf/esni.pdf)
 
 Nowadays it is common practice to host multiple websites at the same IP address. This is made by possible through the use of Server Name Indication (SNI). The SNI extension enables servers to return the correct SSL certificate during the TLS handshake. 
 

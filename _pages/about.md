@@ -8,7 +8,7 @@ subtitle:
 profile:
   align: right
   image: profile_picture.png
-  address: <a href="https://drive.google.com/file/d/1h4wP8Q4bYTYKS95luwYpG16_UYwMfrfl/view?usp=sharing">Download my Resume</a>
+  address: <a href="/assets/pdf/cv.pdf">Download my CV</a>
 
 news: true  # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
@@ -24,6 +24,6 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
 <br>
 I am a Computer Science undergraduate at Birla Institute of Technology and Science, K.K. Birla Goa Campus.
 
-My primary areas of research are Computer Networks and Android Development. 
+My primary areas of research include Software Defined Networks, Network Security and Android Development. 
 
 My other interests include creating art and playing the guitar.

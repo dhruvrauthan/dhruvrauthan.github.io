@@ -7,7 +7,7 @@ importance: 4
 category: Academic
 ---
 
-[Project Report](https://drive.google.com/file/d/1umqTMCQ4ZUISv-k8GXsci81NV_UKjA0Q/view?usp=sharing)
+[Project Report](/assets/pdf/ops.pdf)
 
 [Github Repository](https://github.com/dhruvrauthan/OPSApp)
 

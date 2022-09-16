@@ -7,7 +7,7 @@ importance: 1
 category: Academic
 ---
 
-[Project Report (to be added)]()
+[Project Report](/assets/pdf/cassandra.pdf)
 
 [Github Repository](https://github.com/dhruvrauthan/Edge-Cassandra)
 
