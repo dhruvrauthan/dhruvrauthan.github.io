@@ -8,7 +8,7 @@ subtitle:
 profile:
   align: right
   image: profile_picture.png
-  address: <a href="/assets/pdf/cv.pdf">Download my CV</a>
+  address: <a href="/assets/pdf/cv.pdf">Download my CV</a> <br /> Last updated 14 Dec 2022
 
 news: true  # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
@@ -22,8 +22,8 @@ Put your address / P.O. box / other info right below your picture. You can also 
 Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them. -->
 
 <br>
-I am a Computer Science undergraduate at Birla Institute of Technology and Science, K.K. Birla Goa Campus.
+I am a final year Computer Science undergraduate at BITS Pilani, Goa Campus.
 
-My primary areas of research include Software Defined Networks, Network Security and Android Development. 
+My primary areas of research include Software Defined Networking and Network Security, often the intersection of the two. I am also interested in software development, particularly Android.
 
-My other interests include creating art and playing the guitar.
+Some of my other hobbes are digital drawing and playing the guitar.

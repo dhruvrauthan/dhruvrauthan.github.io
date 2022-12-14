@@ -2,7 +2,7 @@
 layout: page
 permalink: /art/
 title: Art
-description: I like to draw sometimes.
+description: I like to draw sometimes (and mess around with photoshop too).
 nav: true
 ---
 
