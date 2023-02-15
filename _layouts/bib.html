@@ -75,6 +75,8 @@
             {%- capture entrytype -%}<em>{{entry.journal}}</em>{%- endcapture -%}
           {%- elsif entry.type == "inproceedings" -%}
             {%- capture entrytype -%}<em>In {{entry.booktitle}}</em> {%- endcapture -%}
+          {%- elsif entry.type == "undergradthesis" -%}
+            {%- capture entrytype -%}<em>Bachelor's thesis advised by {{entry.supervisor}} at <br>{{entry.school}}</em> {%- endcapture -%}
           {%- endif -%}
           {%- if entry.month -%}
             <!-- deleted month because intefering with thesis -->
