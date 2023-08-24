@@ -1,7 +1,6 @@
 ---
 layout: post
 duration: Aug 2022 - Jan 2023
-location: Berlin
 inline: true
 ---
 

@@ -7,7 +7,7 @@ nav: true
 social: true
 ---
 
-I am usually available from 10am to 11pm IST.
+I am usually available from 10am to 11pm ET.
 
 <i class="fas fa-envelope" style="color:#2698BA; text-align : center;"></i>&nbsp;&nbsp; [dhruvrauthan@gmail.com](mailto:dhruvrauthan@gmail.com)
 
