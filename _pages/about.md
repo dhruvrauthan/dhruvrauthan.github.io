@@ -8,7 +8,7 @@ subtitle:
 profile:
   align: right
   image: profile_picture.png
-  address: <a href="/assets/pdf/cv.pdf">View my CV</a> <br /> Last updated 24 August 2023
+  address: <a href="/assets/pdf/cv.pdf">View my CV</a> <br /> Last updated 29 January 2024
 
 news: true  # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
