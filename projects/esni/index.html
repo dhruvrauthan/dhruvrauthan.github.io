@@ -2,7 +2,7 @@
 <html lang="en">
 
   <!-- Head -->
-  <head><meta http-equiv="refresh" content="3; url=https://dhruvrauthan.github.io/" />        
+  <head>        
     <!-- Metadata, OpenGraph and Schema.org -->
     
 
@@ -10,9 +10,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Dhruv  Rauthan | Page not found</title>
+    <title>Dhruv  Rauthan | Privacy in SDN based networks</title>
     <meta name="author" content="Dhruv  Rauthan" />
-    <meta name="description" content="Looks like there has been a mistake. Nothing exists here." />
+    <meta name="description" content="Improving security in computer networks" />
     <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website" />
 
 
@@ -31,7 +31,7 @@
     <!-- Styles -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22></text></svg>">
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https://dhruvrauthan.github.io/404.html">
+    <link rel="canonical" href="https://dhruvrauthan.github.io/projects/esni/">
 
     <!-- Dark Mode -->
     <script src="/assets/js/theme.js"></script>
@@ -131,12 +131,20 @@
         <div class="post">
 
           <header class="post-header">
-            <h1 class="post-title">Page not found</h1>
-            <p class="post-description">Looks like there has been a mistake. Nothing exists here.</p>
+            <h1 class="post-title">Privacy in SDN based networks</h1>
+            <p class="post-description">Improving security in computer networks</p>
           </header>
 
           <article>
-            <p>You will be redirected to the main page within 3 seconds. If not redirected, please click <a href="https://dhruvrauthan.github.io/">here</a>.</p>
+            <p><a href="/assets/pdf/esni.pdf">Project Report</a></p>
+
+<!-- Nowadays it is common practice to host multiple websites at the same IP address. This is made by possible through the use of Server Name Indication (SNI). The SNI extension enables servers to return the correct SSL certificate during the TLS handshake. 
+
+ESNI keeps the SNI secret by encrypting the SNI in the TLS handshake. This is done using public key cryptography, wherein the server keeps a public key in its DNS record which can be used to encrypt the SNI field. 
+
+Domain fronting is a technique in which different domain names are present in the SNI field and the HTTP host header. The SNI field contains a normal uncensored domain whereas the host header contains the secret cnesored domain. However, this technique was discontinued by CDNs. -->
+
+<p>In this project, we built software using Apache2 and OpenSSL to circumvent censorship agencies’ firewalls by using ESNI and the concept of domain hiding. Unfortunately, ESNI deprecated midway through this project so further research on ESNI was discontinued.</p>
 
           </article>
 
