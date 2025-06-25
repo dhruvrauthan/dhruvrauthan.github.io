@@ -1417,3 +1417,78 @@ figure.cover {
     color: #23212d !important;
   }
 }
+
+
+.bookshelf-year {
+  margin-bottom: 2rem;
+}
+
+.book-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+
+  /* if you want a border/cards look */
+  border: 1px solid var(--global-divider-color);
+  border-radius: 6px;
+  padding: 1rem;
+}
+
+.book-cover img {
+  max-height: 200px;
+  width: auto;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-left: 1rem;
+}
+
+.book-info {
+  flex: 1;
+
+  h3 {
+    margin-bottom: 0.25rem;
+  }
+  p.text-muted {
+    margin-bottom: 0.75rem;
+  }
+}
+
+.rating i {
+  margin-right: 0.2rem;
+  font-size: 1rem;
+  color: #f5c518; // golden stars
+}
+
+.rating .goodreads-icon i {
+  margin-left: 0.5rem;
+  color: unset;   /* or whatever brand/default color you like */
+}
+
+details summary {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 4px;
+  background-color: var(--global-bg-color);
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+details summary:hover {
+  background-color: var(--global-divider-color);
+}
+
+details summary::before {
+  content: "▶";
+  display: inline-block;
+  margin-right: 0.5rem;
+  transition: transform 0.2s;
+}
+
+details[open] summary::before {
+  content: "▼";
+  transform: rotate(0deg);
+}
