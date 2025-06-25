@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Projects
+title: projects
 permalink: /projects/
-description: Academic projects consist of work done with university professors, either as part of the course curriculum or just out of curiosity for that area of research. Personal projects are some apps I developed for fun. I'd be glad to discuss any of these with you!
+description: Academic projects consist of work done with university professors, either as part of the course curriculum or just out of curiosity for that area of research. Personal projects are some apps I developed for fun!
 nav: true
-display_categories: [Academic, Personal]
+display_categories: [academic, personal]
 nav_order: 3
 horizontal: false
 ---

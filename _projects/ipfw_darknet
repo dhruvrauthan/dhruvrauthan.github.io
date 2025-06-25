@@ -1,0 +1,9 @@
+---
+layout: page
+title: Real-time Darknet detection
+description: Modified FreeBSD IPFW for dynamic per-address darknet detection and built a C++ BareFoot Runtime SDN controller for IPv4/IPv6 inactive‐address monitoring—boosting performance by 90%
+img: 
+importance: 950
+category: academic
+redirect: /assets/pdf/ipfw_darknet.pdf
+---

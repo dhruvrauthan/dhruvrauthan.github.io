@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Covid Cases Tracker
-description: An Android app which keeps track of covid cases in India
+title: COVID-19 cases tracker
+description: Built an Android app tracking India’s COVID-19 cases with visualizations
 img: assets/img/covidtracker.png
-importance: 1
+importance: 1000
 github: https://github.com/dhruvrauthan/Corona-Cases-Tracker-Android-App
 redirect: https://github.com/dhruvrauthan/Corona-Cases-Tracker-Android-App
-category: Personal
+category: personal
 ---

@@ -1,10 +1,11 @@
 ---
 layout: page
 title: Privacy in SDN based networks
-description: Improving security in computer networks
+description: Built Apache2/OpenSSL reverse proxy using ESNI and domain fronting to bypass censorship firewalls
 img: 
 importance: 1000
-category: Academic
+category: academic
+redirect: /assets/pdf/esni.pdf
 ---
 
 [Project Report](/assets/pdf/esni.pdf)

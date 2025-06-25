@@ -1,17 +1,17 @@
 ---
 layout: about
-title: About
+title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: 
 
 profile:
   align: right
-  image: profile_picture.png
+  image: #profile_picture.png
   image_circular: false # crops the image to make it circular
   more_info: <a href="/assets/pdf/cv.pdf">View my CV</a> <br /> Last updated 29 January 2024
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+social: false # includes social icons at the bottom of the page
 
 announcements:
   enabled: true # includes a list of news items
@@ -19,7 +19,7 @@ announcements:
   limit: 5 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
-  enabled: true
+  enabled: false
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
@@ -31,8 +31,8 @@ Put your address / P.O. box / other info right below your picture. You can also 
 Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them. -->
 
 <br>
-I am a Computer Science masters student at Georgia Tech.
+I am a Masters graduate in Computer Science from Georgia Tech. 
 
-My primary areas of research include Software Defined Networking and Network Security, often the intersection of the two. I am also interested in software development, particularly Android.
+My primary areas of research include Software Defined Networking and Network Security, often the intersection of the two. I am also interested in software development, including web and android.
 
-Some of my other hobbes are digital drawing and playing the guitar.
+Some of my other hobbies are digital drawing and playing the guitar.
