@@ -6,15 +6,15 @@ subtitle:
 
 profile:
   align: right
-  image: #profile_picture.png
+  image: profile_picture.jpg
   image_circular: false # crops the image to make it circular
-  more_info: <a href="/assets/pdf/cv.pdf">View my CV</a> <br /> Last updated 29 January 2024
+  more_info:
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 
 announcements:
-  enabled: true # includes a list of news items
+  enabled: false # includes a list of news items
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
 
@@ -31,7 +31,7 @@ Put your address / P.O. box / other info right below your picture. You can also 
 Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them. -->
 
 <br>
-I am a Masters graduate in Computer Science from Georgia Tech. 
+I have graduated with a Masters degree in Computer Science from Georgia Tech.
 
 My primary areas of research include Software Defined Networking and Network Security, often the intersection of the two. I am also interested in software development, including web and android.
 

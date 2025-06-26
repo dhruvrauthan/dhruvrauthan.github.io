@@ -1,26 +1,38 @@
-          
-          <div class="news">
-            <h3>Experience</h3>
-            {% if site.news  -%} 
-            <div class="table-responsive">
-              <table class="table table-sm table-borderless">
-              {%- assign news = site.news | reverse -%} 
-              {% for item in news limit: site.news_limit %} 
-                <tr>
-                  <!-- <th scope="row">{{ item.date | date: "%b %-d, %Y"}}</th> -->
-                  <th scope= "row">{{item.duration}}<br>{{item.location}}</th>
-                  <td>
-                    {% if item.inline -%} 
-                      {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
-                    {%- else -%} 
-                      <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
-                    {%- endif %} 
-                  </td>
-                </tr>
-              {%- endfor %} 
-              </table>
-            </div>
-          {%- else -%} 
-            <p>No news so far...</p>
-          {%- endif %} 
-          </div>
+<div class="experience">
+  <h3>Experience</h3>
+
+  {% if site.news %}
+    <div class="table-responsive">
+      <table class="table table-sm table-borderless">
+        {% assign entries = site.news | reverse %}
+        {% for item in entries limit: site.news_limit %}
+        <tr>
+          <th scope="row">
+            {%- comment -%} first try a from–to pair {%- endcomment -%}
+            {% if item.from and item.to %}
+              {{ item.from | date: "%b %Y" }} – {{ item.to | date: "%b %Y" }}
+            {% elsif item.duration %}
+              {{ item.duration }}
+            {% else %}
+              {{ item.date | date: "%b %Y" }}
+            {% endif %}
+            <br>
+            {{ item.location }}
+          </th>
+          <td>
+            {% if item.inline %}
+              {{ item.content | markdownify }}
+            {% else %}
+              <a class="news-title" href="{{ item.url | relative_url }}">
+                {{ item.title }}
+              </a>
+            {% endif %}
+          </td>
+        </tr>
+        {% endfor %}
+      </table>
+    </div>
+  {% else %}
+    <p>No experience added yet…</p>
+  {% endif %}
+</div>

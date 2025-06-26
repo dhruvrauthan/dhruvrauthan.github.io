@@ -1,8 +1,12 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
-duration: Apr 2020 - Aug 2020
+title: "Android Developer"
+duration: "Apr 2020 – Aug 2020"
+location: "IndiaHaat"
 inline: true
+content: >
+  **Android Developer**  
+  [IndiaHaat](https://indiahaat.in)
 ---
 
 **Android Developer**

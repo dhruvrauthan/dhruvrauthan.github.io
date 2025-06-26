@@ -2,11 +2,13 @@
 layout: page
 permalink: /publications/
 title: publications
-description: It ain't much, but it's honest work
+description: 
 years: [2023, 2022]
 nav: true
 nav_order: 2
 ---
+
+It ain't much, but it's honest work
 
 <!-- _pages/publications.md -->
 

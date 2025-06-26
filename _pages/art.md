@@ -2,9 +2,11 @@
 layout: page
 permalink: /art/
 title: art
-description: I like to draw sometimes (and mess around with photoshop too).
+description:
 nav: true
 ---
+
+I like to draw sometimes (and mess around with photoshop too)
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">

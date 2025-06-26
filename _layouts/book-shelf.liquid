@@ -3,77 +3,159 @@ layout: default
 ---
 <h1>{{ page.title }}</h1>
 
-{% if page.collection and page.collection.size > 0 %}
+{{ content }}
+
+<!-- view toggle toolbar -->
+<div class="view-toggle mb-4" style="text-align:center;">
+  <button id="btn-grid" class="active">Grid</button>
+  <button id="btn-list">List</button>
+</div>
+
+<!-- GRID view -->
+<div id="grid-container">
+
+  {% if page.grid_intro %}
+    <div class="grid-intro mb-4">
+      {{ page.grid_intro | markdownify }}
+    </div>
+  {% endif %}
+
   {% assign books = site[page.collection] | sort: "finished" | reverse %}
-  {% if books and books.size > 0 %}
-    {% assign current_year = nil %}
-    {% for book in books %}
-      {% assign book_year = book.finished | date: "%Y" %}
-      {% if book_year != current_year %}
-        {% unless forloop.first %}
-          </div> <!-- close previous year-group -->
-        {% endunless %}
-        <h2 id="y{{ book_year }}">{{ book_year }}</h2>
-        <div class="bookshelf-year">
-        {% assign current_year = book_year %}
+  {% assign current_year = nil %}
+
+  {% for book in books %}
+    {% assign book_year = book.finished | date: '%Y' %}
+
+    {% if book_year != current_year %}
+      {% unless forloop.first %}
+        </div>
+      {% endunless %}
+      <h2>{{ book_year }}</h2>
+      <div class="bookshelf-year-grid">
+      {% assign current_year = book_year %}
+    {% endif %}
+
+    <figure class="cover">
+      {% if book.goodreads_url %}
+        <a class="cover-link"
+           href="{{ book.goodreads_url }}"
+           target="_blank"
+           rel="noopener">
       {% endif %}
 
-      <div class="book-card mb-4 d-flex">
-        <!-- LEFT: cover -->
-        <div class="book-cover mr-4">
-          {% if book.cover %}
-            <img
-              src="{{ book.cover | prepend: page.covers | relative_url }}"
-              alt="{{ book.title }} cover"
-              style="max-height:200px; width:auto; border-radius:4px;"
-            >
-          {% endif %}
-        </div>
+        <img
+          alt="{{ book.title }} cover"
+          src="{{ book.cover | prepend: page.covers | relative_url }}"
+          style="height:200px"
+        >
 
-        <!-- RIGHT: metadata -->
-        <div class="book-info flex-fill">
-          <h3 class="mb-1">{{ book.title }}</h3>
-          {% if book.author %}
-            <p class="text-muted mb-2">{{ book.author }}</p>
-          {% endif %}
+      {% if book.goodreads_url %}
+        </a>
+      {% endif %}
+    </figure>
 
-        <!-- Star rating with inline Goodreads icon -->
-		<div class="rating mb-2 d-inline-flex align-items-center">
-			{% assign stars = book.rating | default: 0 %}
-			{% for i in (1..5) %}
-			{% if i <= stars %}
-				<i class="fas fa-star"></i>
-			{% else %}
-				<i class="far fa-star"></i>
-			{% endif %}
-			{% endfor %}
+    {% if forloop.last %}
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>
 
-			{% if book.goodreads_url %}
-			<a href="{{ book.goodreads_url }}"
-				target="_blank"
-				rel="noopener"
-				class="goodreads-icon"
-				aria-label="Goodreads review">
-				<i class="fab fa-goodreads fa-lg"></i>
-			</a>
-			{% endif %}
-		</div>
 
-          <!-- Collapsible review text -->
-          {% if book.review %}
-            <details class="mt-2">
-              <summary>Review</summary>
-              <div class="review-text mt-1">
-                {{ book.review | | xml_escape | newline_to_br }}
-              </div>
-            </details>
-          {% endif %}
-        </div>
+
+<!-- LIST view -->
+<div id="list-container" style="display:none;">
+  {% assign books = site[page.collection] | sort: "finished" | reverse %}
+  {% assign current_year = nil %}
+
+  {% for book in books %}
+    {%- assign book_year = book.finished | date: '%Y' -%}
+
+    {%- if book_year != current_year -%}
+      {%- if current_year -%}
+        </div> <!-- close previous year-group -->
+      {%- endif -%}
+
+      <h2 id="y{{ book_year }}">{{ book_year }}</h2>
+      <div class="bookshelf-year">
+      {%- assign current_year = book_year -%}
+    {%- endif -%}
+
+    <div class="book-card mb-4 d-flex">
+      <!-- cover -->
+      <div class="book-cover mr-4">
+        {% if book.cover %}
+          <img src="{{ book.cover | prepend: page.covers | relative_url }}"
+               alt="{{ book.title }} cover"
+               style="max-height:200px; width:auto; border-radius:4px;">
+        {% endif %}
       </div>
 
-      {% if forloop.last %}
-        </div> <!-- close last year-group -->
-      {% endif %}
-    {% endfor %}
-  {% endif %}
-{% endif %}
+      <!-- info -->
+      <div class="book-info flex-fill">
+        <h3 class="mb-1">{{ book.title }}</h3>
+        {% if book.author %}
+          <p class="text-muted mb-2">{{ book.author }}</p>
+        {% endif %}
+
+        <div class="rating mb-2 d-inline-flex align-items-center">
+          {% assign stars = book.rating | default: 0 %}
+          {% for i in (1..5) %}
+            {% if i <= stars %}
+              <i class="fas fa-star"></i>
+            {% else %}
+              <i class="far fa-star"></i>
+            {% endif %}
+          {% endfor %}
+
+          {% if book.goodreads_url %}
+            <a href="{{ book.goodreads_url }}"
+               target="_blank" rel="noopener"
+               class="goodreads-icon ml-2"
+               aria-label="Goodreads review">
+              <i class="fab fa-goodreads fa-lg"></i>
+            </a>
+          {% endif %}
+        </div>
+
+        {% if book.review %}
+          <details class="mt-2">
+            <summary>Review</summary>
+            <div class="review-text mt-1">
+              {{ book.review | markdownify }}
+            </div>
+          </details>
+        {% endif %}
+      </div>
+    </div>
+  {% endfor %}
+
+  {%- if current_year -%}
+    </div> <!-- close last year-group -->
+  {%- endif -%}
+</div>
+
+
+<!-- toggle script -->
+<script>
+  const btnGrid = document.getElementById('btn-grid');
+  const btnList = document.getElementById('btn-list');
+  const gridC  = document.getElementById('grid-container');
+  const listC  = document.getElementById('list-container');
+
+  function activate(view) {
+    if (view === 'grid') {
+      gridC.style.display = '';
+      listC.style.display = 'none';
+      btnGrid.classList.add('active');
+      btnList.classList.remove('active');
+    } else {
+      gridC.style.display = 'none';
+      listC.style.display = '';
+      btnList.classList.add('active');
+      btnGrid.classList.remove('active');
+    }
+  }
+
+  btnGrid.addEventListener('click', () => activate('grid'));
+  btnList.addEventListener('click', () => activate('list'));
+</script>
