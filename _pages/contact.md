@@ -4,6 +4,7 @@ permalink: /contact/
 title: contact
 description: #Contact me!
 nav: true
+nav_order: 10
 ---
 
 The best way to reach me is via email

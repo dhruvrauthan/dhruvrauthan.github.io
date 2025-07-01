@@ -9,7 +9,7 @@ nav_order: 3
 horizontal: false
 ---
 
-Academic projects consist of work done with university professors, either as part of the course curriculum or just out of curiosity for that area of research. Personal projects are some apps I developed for fun!
+Academic projects consist of work done with university professors, either as part of the course curriculum or just out of curiosity for that area of research. Personal projects are some applications I developed for fun!
 
 <!-- pages/projects.md -->
 <div class="projects">
