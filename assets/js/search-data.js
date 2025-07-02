@@ -487,6 +487,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/red_dragon/";
+            },},{id: "books-sphere",
+          title: 'Sphere',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/sphere/";
             },},{id: "books-what-i-talk-about-when-i-talk-about-running",
           title: 'What I Talk About When I Talk About Running',
           description: "",
